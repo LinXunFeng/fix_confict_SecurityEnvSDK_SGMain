@@ -1,0 +1,2 @@
+# fix_confict_SecurityEnvSDK_SGMain
+解决SecurityEnvSDK与SGMain的冲突问题
