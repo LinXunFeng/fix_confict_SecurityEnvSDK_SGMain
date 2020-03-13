@@ -51,9 +51,9 @@ def main(argv):
     xcconfig_release_path = path_str % (project_name, project_name, "release")
     # print(xcconfig_debug_path)
     # print(xcconfig_release_path)
-    be_fixed_frameword_str = '-framework "SecurityEnvSDK"'
-    replace_all_str(xcconfig_debug_path,  be_fixed_frameword_str, '')
-    replace_all_str(xcconfig_release_path,  be_fixed_frameword_str, '')
+    be_fixed_str = '-framework "SecurityEnvSDK"'
+    replace_all_str(xcconfig_debug_path,  be_fixed_str, '')
+    replace_all_str(xcconfig_release_path,  be_fixed_str, '')
     print("%s is fixed successfully" %project_name)
 
 if __name__ == "__main__":
