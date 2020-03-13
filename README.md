@@ -35,7 +35,7 @@ Pods/Target Support Files/Pods-项目名/Pods-项目名.release.xcconfig
 
 ```ruby
 post_install do |installer|
-  # 修复 -framework "SecurityEnvSDK" 报错的问题
+  # 解决SecurityEnvSDK与SGMain的冲突问题
   command = "python fix.py -p 项目名称"
   system(command)
 end
