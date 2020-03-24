@@ -14,7 +14,8 @@ def replace_all_str(file_path, for_str, to_str):
     """
     if not os.path.exists(file_path):
         # 文件不存在
-        print('文件不存在')
+        print('文件不存在，修复失败')
+        sys.exit(0)
         return
     bak_file_path = file_path+".bak"
     with codecs.open(file_path, 'r', encoding='utf-8') as f, codecs.open(bak_file_path, 'w', encoding='utf-8') as f_w:
